@@ -1,0 +1,29 @@
+.register {
+    &-wrapper {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+        min-height: 900px;
+        // height: auto;
+        & iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border: 0; 
+        }
+    }
+}
+
+// .register-wrapper {
+//     position: relative;
+//     overflow: hidden;
+//     min-height: 400px; /* Justera efter behov */
+// }
+
+// .register-wrapper {
+//     position: relative;
+//     overflow: visible;
+//     height: auto;
+// }

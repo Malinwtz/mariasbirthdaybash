@@ -1,0 +1,87 @@
+$primary-color: #ff4081;
+$secondary-color: #333;
+$background-color: #f9f9f9;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $background-color;
+  color: $secondary-color;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.header {
+  background-color: $primary-color;
+  padding: 20px;
+  h1 {
+    color: white;
+    margin: 0;
+  }
+  nav {
+    margin-top: 10px;
+    a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+main {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    b {
+      color: $primary-color;
+    }
+  }
+}
+
+.faq {
+  margin-top: 20px;
+}
+
+.faq-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-inner-wrapper {
+  margin-bottom: 15px;
+}
+
+.faq-button {
+  width: 100%;
+  padding: 15px;
+  background: $primary-color;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: left;
+  &:hover {
+    background: darken($primary-color, 10%);
+  }
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px;
+  background: #fff;
+  border-left: 3px solid $primary-color;
+  margin-top: 5px;
+}
