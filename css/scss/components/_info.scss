@@ -1,0 +1,60 @@
+﻿@import '../tools/variables';
+
+.info {
+    
+    &-prefix,
+    &-suffix {
+        font-size: 2rem;
+    }
+    
+    &-prefix {
+        color: white;
+        margin-right: 16px;
+        font-weight: 700;
+        border-bottom: $primary-color solid 6px;
+        margin-bottom: 16px;
+    }
+    
+    &-suffix {
+        font-weight: 400;
+        
+        &.-new-line {
+            flex-basis: 100%;
+        }
+    }
+    
+    &-icon {
+        align-self: flex-start;
+        fill: white;
+        width: 40px;
+        margin-right: 16px;
+    }
+}
+
+.infoList {
+    margin: 0;
+    padding: 0;
+    
+    &-item {
+        padding: 20px;
+        margin-bottom: 32px;
+        background-color: #333;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: #FFF;
+        font-weight: 700;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        align-items: center;
+        position: relative;
+        
+        &:nth-child(even) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            justify-content: flex-end;
+        }
+    }
+}

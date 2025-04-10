@@ -1,7 +1,9 @@
 
-@import 'framework/header';
-@import 'framework/faq';
-@import 'framework/register';
-@import 'framework/index';
+@import 'components/header';
+@import 'components/faq';
+@import 'components/register';
+@import 'components/calendar';
+@import 'components/info';
 
-
+@import 'framework/framework';
+@import 'framework/typography';

@@ -1,54 +1,83 @@
 <!DOCTYPE html>
-    <html lang="sv">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="src/css/style.min.css">    
-        <title>Dirty thirty</title>
-    </head>
-    <body>
-        <header class="header-wrapper">
-            <h1 class="header-title">
-                Welcome to Maria's birthday bash!
-            </h1>
-            <nav class="header-navbar">
-                <a class="header-link" href="index.html">Start</a>
-                <a class="header-link" href="agenda.html">Agenda</a>
-                <a class="header-link" href="faq.html">FAQ</a>
-                <a class="header-link" href="register.html">Register</a>
-            </nav>
-        </header>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="src/css/style.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=calendar_today"/>
+    <title>Dirty thirty</title>
+</head>
+<body>
+<header class="header-wrapper">
+    <h1 class="header-title">
+        Welcome to Maria's birthday bash!
+    </h1>
+    <nav class="header-navbar">
+        <a class="header-link" href="index.html">Start</a>
+        <a class="header-link" href="agenda.html">Agenda</a>
+        <a class="header-link" href="faq.html">FAQ</a>
+        <a class="header-link" href="register.html">Register</a>
+    </nav>
+</header>
+<main>
+    <div class="calendar">
+        <div class="calendar-wrapper">
+            <div class="calendar-date">
+                <time class="calendar-inner">
+                    <span class="calendar-day">31st</span>
+                    <span class="calendar-month">May</span>
+                </time>
+            </div>
+            <svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z"/>
+            </svg>
+        </div>
+        <h2 class="calendar-heading">Save the date</h2>
+    </div>
+    <ul class="infoList">
+        <li class="infoList-item">
+            <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            <b class="info-prefix">Location:</b>
+            <p class="info-suffix">Oslo, Norway</p>
+        </li>
+        <li class="infoList-item">
+            <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="m600-120-240-84-186 72q-20 8-37-4.5T120-170v-560q0-13 7.5-23t20.5-15l212-72 240 84 186-72q20-8 37 4.5t17 33.5v560q0 13-7.5 23T812-192l-212 72Zm-40-98v-468l-160-56v468l160 56Zm80 0 120-40v-474l-120 46v468Zm-440-10 120-46v-468l-120 40v474Zm440-458v468-468Zm-320-56v468-468Z"/>
+            </svg>
+            <b class="info-prefix">Weekend itinerary:</b>
+            <p class="info-suffix">n/a</p>
+        </li>
+        <li class="infoList-item">
+            <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M320-200h280v-400h-80q-28 0-46 14t-43 41q-20 22-46.5 45.5T320-465v265Zm-80 80v-346q-52-14-86-56t-34-98q0-53 30.5-94t78.5-57q23-48 68.5-78T400-879q35 0 65.5 12t55.5 32q10-2 19-3.5t20-1.5q66 0 113 47t47 113q0 22-5.5 42T698-600h62q33 0 56.5 23.5T840-520v240q0 33-23.5 56.5T760-200h-80v80H240Zm-40-500q0 33 23.5 56.5T280-540q32 0 54.5-21t46.5-47q25-27 56.5-49.5T520-680h120q0-33-23.5-56.5T560-760q-25 0-42 6.5l-17 6.5-31-26q-11-9-28.5-17.5T400-799q-32 0-58.5 17T301-736l-14 30-32 11q-25 8-40 28.5T200-620Zm480 340h80v-240h-80v240Zm-360 80h280-280Z"/>
+            </svg>
+            <b class="info-prefix">Friday:</b>
+            <p class="info-suffix">Pub crawl for the early arrivals</p>
+        </li>
+        <li class="infoList-item">
+            <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="m80-80 200-560 360 360L80-80Zm132-132 282-100-182-182-100 282Zm370-246-42-42 224-224q32-32 77-32t77 32l24 24-42 42-24-24q-14-14-35-14t-35 14L582-458ZM422-618l-42-42 24-24q14-14 14-34t-14-34l-26-26 42-42 26 26q32 32 32 76t-32 76l-24 24Zm80 80-42-42 144-144q14-14 14-35t-14-35l-64-64 42-42 64 64q32 32 32 77t-32 77L502-538Zm160 160-42-42 64-64q32-32 77-32t77 32l64 64-42 42-64-64q-14-14-35-14t-35 14l-64 64ZM212-212Z"/>
+            </svg>
+            <b class="info-prefix">Saturday evening:</b>
+            <p class="info-suffix">PARTY TIME</p>
+        </li>
+    </ul>
+    <p class="mainbody">
+        Please let me know if you're coming by using the registration form latest APRIL 30th so I can plan food and
+        drinks accordingly.
 
-        <main>
-            <p>
-              <b>SAVE THE DATE:</b> May 31st, 2025      
-            </p>  
-            <p>
-                <b>Location:</b> Oslo, Norway
-            </p>       
-            <p>        
-                <b>Weekend itinerary:</b>
-            </p>
-            <p>                
-                <b>Friday:</b> Pub crawl for the early arrivals
-            </p>
-            <p>
-                <b>Saturday daytime:</b> Sightseeing in Oslo
-            </p>
-            <p>
-                <b>Saturday evening:</b> PARTY TIME           
-            </p>                           
-            <p>
-                Please let me know if you're coming by using the registration form latest APRIL 30th so I can plan food and drinks accordingly.
-                
-                For those of you flying in from abroad, check out the FAQ section for hotel/hostel recommendations. 
-                
-                More details will come as we’re getting closer to the date – I can't wait to celebrate getting old and wrinkly with you guys.
-            </p>
-            <p>
-                Slaay 
-                /Maria 
-            </p>
-        </main>
-    </body>
+        For those of you flying in from abroad, check out the FAQ section for hotel/hostel recommendations.
+
+        More details will come as we’re getting closer to the date – I can't wait to celebrate getting old and wrinkly
+        with you guys.
+    </p>
+    <span class="signature">
+        <span class="signature-name">Maria</span>
+    </span>
+</main>
+</body>
 </html>

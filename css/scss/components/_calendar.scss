@@ -1,0 +1,45 @@
+﻿@import '../tools/variables';
+
+.calendar {
+    margin-bottom: 64px;
+    
+    &-heading {
+        font-size: 4rem;
+        line-height: 4rem;
+        text-align: center;
+        margin: 0;
+    }
+    
+    &-wrapper {
+        position: relative;
+        text-align: center;
+    }
+    
+    &-icon {
+        width: 300px;
+        fill: lighten($primary-color, 20%);
+    }
+    
+    &-date {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    &-inner {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &-day {
+        font-family: "Dancing Script", cursive;
+        font-size: 5rem;
+    }
+    
+    &-month {
+        font-family: "Dancing Script", cursive;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,61 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
+
+    @media (max-width: 768px) {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    margin: 0;
+}
+
+b {
+    color: $primary-color;
+}
+
+.mainbody {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+    
+    &-heart {
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translate(-50%, -50%);
+        fill: $primary-color;
+        width: 4rem;
+    }
+}
+
+.signature {
+    font-size: 4em;
+    display: block;
+    text-align: center;
+    
+    &-name {
+        font-family: "Dancing Script", cursive;
+        font-style: normal;
+    }
+}
