@@ -46,6 +46,14 @@ b {
         transform: translate(-50%, -50%);
         fill: $primary-color;
         width: 4rem;
+
+        @media (max-width: 768px) {
+            position: relative;
+            transform: none;
+            margin-left: 12px;
+            display: block;
+            right: 0;
+        }
     }
 }
 

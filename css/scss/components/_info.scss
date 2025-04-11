@@ -13,21 +13,39 @@
         font-weight: 700;
         border-bottom: $primary-color solid 6px;
         margin-bottom: 16px;
+        margin-top: 16px;
+
+        @media (max-width: 768px) {
+            margin-top: 0;
+        }
     }
     
     &-suffix {
         font-weight: 400;
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
         
         &.-new-line {
             flex-basis: 100%;
+
+            @media (max-width: 768px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
     
     &-icon {
-        align-self: flex-start;
         fill: white;
         width: 40px;
         margin-right: 16px;
+
+        @media (max-width: 768px) {
+            align-self: flex-start;
+        }
     }
 }
 
@@ -48,6 +66,10 @@
         border-bottom-right-radius: 30px;
         align-items: center;
         position: relative;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
         
         &:nth-child(even) {
             border-top-right-radius: 0;
@@ -55,6 +77,10 @@
             border-top-left-radius: 30px;
             border-bottom-left-radius: 30px;
             justify-content: flex-end;
+            
+            @media (max-width: 768px) {
+                justify-content: center;
+            }
         }
     }
 }

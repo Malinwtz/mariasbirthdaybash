@@ -10,22 +10,22 @@
         align-items: center;
         text-align: center;
     }
-    
+
     &-title {
         color: white;
         margin: 0;
     }
-    
+
     &-navbar {
         margin-top: 10px;
         display: flex;
         gap: 15px;
-        
+
         @media (max-width: 768px) {
             flex-direction: column;
         }
     }
-    
+
     &-link {
         font-size: 2rem;
         color: white;
@@ -37,23 +37,44 @@
         @media (max-width: 768px) {
             font-size: 1.5rem;
         }
-        
-        &:after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 4px;
-            background-color: #333;
-            transition: all 0.3s ease-in-out;
+
+        & p {
+            display: inline-block;
+
+            &:after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 4px;
+                background-color: #333;
+                transition: all 0.3s ease-in-out;
+            }
         }
+
 
         &:hover {
             border-radius: 4px;
             background-color: #333;
             color: $primary-color;
+
+            & p {
+                &:after {
+                    background-color: $primary-color;
+                }
+            }
+
+
+        }
+        
+        &--active {
+            border-radius: 4px;
+            background-color: #333;
+            color: $primary-color;
             
-            &:after {
-                background-color: $primary-color;
+            & p {
+                &:after {
+                    background-color: $primary-color;
+                }
             }
         }
     }
