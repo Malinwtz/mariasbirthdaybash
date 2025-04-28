@@ -38,6 +38,14 @@ b {
     font-weight: 400;
     line-height: 1.6;
     text-align: center;
+
+    & a {
+        color: $primary-color;
+
+        &:hover {
+            color: darken($primary-color, 20%);
+        }
+    }
     
     &-heart {
         position: absolute;

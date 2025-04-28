@@ -1,6 +1,19 @@
 ﻿@import '../tools/variables';
 
 .info {
+
+    &-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        font-family: 'Roboto', sans-serif;
+
+        & svg {
+            fill: $primary-color;
+        }
+    }
     
     &-prefix,
     &-suffix {
@@ -49,7 +62,7 @@
     }
 }
 
-.infoList {
+.info-list {
     margin: 0;
     padding: 0;
     
